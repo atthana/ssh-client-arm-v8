@@ -1,15 +1,15 @@
 # alpine-ssh-client
-## Imitate from kroniak because need to use in Raspberry pi which required `arm64` architecture.
+### Imitate from [`kroniak`](https://github.com/kroniak/alpine-ssh-client/tree/master) because need to use in Raspberry pi which required `arm64` architecture.
 ### Need to imitate because don't know how to contribute.
 
-A little docker image based on alpine with ssh-client and bash
+A little docker image based on alpine with ssh-client and bash<br>
 
 ## using from GitLab CI
 
 ```yml
 deploy_staging:
   stage: deploy
-  image: kroniak/ssh-client
+  image: atthana/ssh-client-arm-v8:3.18
   environment:
     name: staging
     url: https://sample-app.net
