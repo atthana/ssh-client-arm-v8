@@ -1,4 +1,6 @@
 # alpine-ssh-client
+## Imitate from kroniak because need to use in Raspberry pi which required `arm64` architecture.
+### Need to imitate because don't know how to contribute.
 
 A little docker image based on alpine with ssh-client and bash
 
@@ -28,14 +30,8 @@ deploy_staging:
 
 ## using from docker
 
-`docker run -it --rm kroniak/ssh-client bash`
+`docker run -it --rm atthana/ssh-client-arm-v8 bash`
 
 ## supported tags and respective Dockerfile links
 
-- 3.12 [3.12/Dockerfile](3.12/Dockerfile)
-- 3.13 [3.13/Dockerfile](3.13/Dockerfile)
-- 3.14 [3.14/Dockerfile](3.14/Dockerfile)
-- 3.15 [3.15/Dockerfile](3.15/Dockerfile)
-- 3.16 [3.16/Dockerfile](3.16/Dockerfile)
-- 3.17 [3.17/Dockerfile](3.17/Dockerfile)
 - 3.18, latest [3.18/Dockerfile](3.18/Dockerfile)
